@@ -1,5 +1,5 @@
 [project]
-name = "build-your-own-a2a-server-and-client"
+name = "a2a-python-sdk"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"

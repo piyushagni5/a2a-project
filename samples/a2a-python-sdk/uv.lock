@@ -3,6 +3,37 @@ revision = 2
 requires-python = ">=3.13"
 
 [[package]]
+name = "a2a-python-sdk"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "a2a-sdk" },
+    { name = "click" },
+    { name = "httpx" },
+    { name = "langchain" },
+    { name = "langchain-google-genai" },
+    { name = "langchain-tavily" },
+    { name = "langgraph" },
+    { name = "python-dotenv" },
+    { name = "rich" },
+    { name = "uvicorn" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "a2a-sdk", specifier = ">=0.3.0" },
+    { name = "click", specifier = ">=8.2.1" },
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "langchain", specifier = ">=0.3.27" },
+    { name = "langchain-google-genai", specifier = ">=2.1.9" },
+    { name = "langchain-tavily", specifier = ">=0.2.11" },
+    { name = "langgraph", specifier = ">=0.6.3" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
+    { name = "rich", specifier = ">=14.1.0" },
+    { name = "uvicorn", specifier = ">=0.35.0" },
+]
+
+[[package]]
 name = "a2a-sdk"
 version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -105,37 +136,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/5a/b0/1367933a8532ee6ff8d63537de4f1177af4bff9f3e829baf7331f595bb24/attrs-25.3.0.tar.gz", hash = "sha256:75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b", size = 812032, upload-time = "2025-03-13T11:10:22.779Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl", hash = "sha256:427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3", size = 63815, upload-time = "2025-03-13T11:10:21.14Z" },
-]
-
-[[package]]
-name = "build-your-own-a2a-server-and-client"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "a2a-sdk" },
-    { name = "click" },
-    { name = "httpx" },
-    { name = "langchain" },
-    { name = "langchain-google-genai" },
-    { name = "langchain-tavily" },
-    { name = "langgraph" },
-    { name = "python-dotenv" },
-    { name = "rich" },
-    { name = "uvicorn" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "a2a-sdk", specifier = ">=0.3.0" },
-    { name = "click", specifier = ">=8.2.1" },
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "langchain", specifier = ">=0.3.27" },
-    { name = "langchain-google-genai", specifier = ">=2.1.9" },
-    { name = "langchain-tavily", specifier = ">=0.2.11" },
-    { name = "langgraph", specifier = ">=0.6.3" },
-    { name = "python-dotenv", specifier = ">=1.1.1" },
-    { name = "rich", specifier = ">=14.1.0" },
-    { name = "uvicorn", specifier = ">=0.35.0" },
 ]
 
 [[package]]
